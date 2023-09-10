@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularet</title>
+</head>
+<body>
+    <form>
+        <input type="text"
+        name="username"
+        placeholder="Enter Username"
+        minlength="5"
+        maxlength="15"
+        required
+        >
+
+        <input type="tel"
+        name="phone"
+        id="phone"
+        placeholder="Enter Phonenumber"
+        required
+        pattern="[0-9]+">
+
+        <input type="search"
+        name="search"
+        id="search"
+        placeholder="Search...">
+
+        <input type="email"
+        name="email"
+        placeholder="Enter email"
+        required>
+        
+        <input type="password"
+        required>
+
+        <input type="number"
+        name="grade"
+        required
+        value="0"
+        min="5"
+        max="10">
+
+        <input type="color">
+
+        <input type="date">
+
+        <input type="datetime-local">
+
+        <input type="time">
+        <input type="week">
+        <input type="month">
+        <input type="file">
+        <input type="image"
+        src="./4.jpg"
+        height="100">
+
+        <input type="hidden"
+        name="browser"
+        value="Chrome">
+            <br>
+            <br>
+            <br>
+        <input type="checkbox"
+        name="education"
+        id="bsc"
+        value="BSc">
+        <label for="bsc">Bachelor</label>
+
+
+        <input list="browsers"
+        name="browsers"
+        id="browser">
+        <datalist id="browsers">
+            <option value="Google Chrome">Google</option>
+            <option value="Mozilla">Firefox</option>
+        </datalist>
+        <button type="submit">Submit</button>
+    </form>
+
+
+</body>
+</html>
