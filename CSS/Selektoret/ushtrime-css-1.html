@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors - Ex. 1</title>
+    <style>
+        #read-more {
+            background-color: blue;
+        }
+        .read-more{
+            font-size: 24px;
+        }
+        li.read-more{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit.</h1>
+    <p class="content p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi repellendus sequi beatae laudantium atque ducimus nulla, <span class="read-more">inventore dolores provident blanditiis</span>.</p>
+    <ul>
+        <li class="read-more">Lorem ipsum, dolor</li>
+        <li>laudantium <span>atque</span> ducimus</li>
+        <li>provident <strong><span>blanditiis</span></strong></li>
+    </ul>
+    <a href="#" id="read-more">Read More</a>
+</body>
+</html>

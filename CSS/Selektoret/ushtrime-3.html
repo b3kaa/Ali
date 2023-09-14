@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            color: blue;
+        }
+        h1 ~ p{
+            background-color: red;
+        }
+        h1 + p{
+            font-size: 24px;
+        }
+        ul+p{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>
+            Lorem <b>ipsum dolor <span>sit amet</span> consectetur adipisicing</b> elit. Accusamus.
+        </p>
+        <ul>
+            <li>
+                <p>
+                    Lorem ipsum dolor sit <span>amet consectetur</span> adipisicing elit. Corporis, iure?
+                </p>
+            </li>
+        </ul>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam?
+        </p>
+    </div>
+</body>
+</html>
