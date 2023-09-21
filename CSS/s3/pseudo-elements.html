@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a.home::before {
+            content: '🏠';
+        }
+
+        /* p::first-letter{
+            font-size: 24px;
+        } */
+        p::first-leter::selection{
+            background-color: rgb(88, 25, 38);
+        }
+        p::first-line{
+            color: yellow;
+        }
+        p::selection{
+            background-color: rgb(255, 0, 0) !important;
+        }
+        span::selection{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#" class="home">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="https://google.com">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium repellat sed animi doloremque excepturi. Excepturi dolorum dignissimos beatae aspernatur, ad velit <span>inventore possimus quod</span> ipsam ab, et qui sint corrupti!
+    </p>
+</body>
+</html>

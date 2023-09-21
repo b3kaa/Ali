@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo klasat dhe Pseudo elementet</title>
+    <style>
+        a {
+            color: rgb(219, 191, 191);
+            background: crimson;
+        }
+        /* Kur shkon me maus permi ndro njgyre */
+        a:hover {
+            background-color: chocolate;
+            color: black;
+        }
+
+        a:visited{
+            background-color: cornflowerblue;
+        }
+
+        a:active {
+            background-color: aquamarine;
+        }
+        /* a:empty {
+            background-color: red;
+            padding: 20px;
+        } */
+        li:first-child{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#"></a></li>
+    </ul>
+
+    <p></p>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box</title>
+    <style>
+        .box{
+            width: 300px;
+            min-height: 300px;
+            color: black;
+            background-color: red;
+            border: 5px solid black;
+            padding: 20px;
+            margin: auto;
+
+            /* margin-top: 50%;
+            positon: relative;
+            top: -175px; */
+
+            /* 
+                Width eshte 300px, border eshte 5 px , mirepo left +right bejne 10 px, dhe kemi padding 20 px qe eshte left plus right na jep 40 px
+                300 + 10 + 40 = 350px
+            */
+
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolore suscipit dolorem minima repellat iusto provident ipsum explicabo, harum impedit praesentium atque laboriosam! Repudiandae fugit suscipit reprehenderit dignissimos quidem nam?
+    </div>
+</body>
+</html>
