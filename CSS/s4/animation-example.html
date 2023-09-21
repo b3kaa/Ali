@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation example</title>
+    <style>
+@keyframes flip-horizontal-bottom {
+0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+}
+100% {
+    -webkit-transform: rotateX(-180deg);
+            transform: rotateX(-180deg);
+    }
+}
+
+div{
+        width: 200px;
+        height: 200px;
+        background-color: coral;
+	    -webkit-animation: flip-horizontal-bottom 2.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	            animation: flip-horizontal-bottom 2.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+    </style>
+</head>
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate at culpa nemo earum dolore sequi suscipit fugiat excepturi. Inventore cumque modi, eligendi ducimus quo nam impedit! Quam non eos expedita!</div>
+</body>
+</html>

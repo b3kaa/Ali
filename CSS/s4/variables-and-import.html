@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <style>
+        @import url(style.css);
+        :root {
+            --primary-color: rgba(29, 157, 161, 0.377);
+            --img-padding: 10px;
+            --shadow: 2px 2px 2px rgb(255, 0, 0);
+        }
+        h1 {
+            color: var(--primary-color);
+            text-shadow: var(--shadow);
+            /* var nuk ekziston ne vend te saj perdoret 100px */
+            margin-bottom: var(--margin-bottom, 100px);
+        }
+        li:nth-child(3) {
+            color: var(--primary-color);
+            text-shadow: var(--shadow);
+        }
+        img{
+            border: 1px solid   var(--primary-color);
+            /* padding: 10px; */
+            padding: var(--img-padding);
+            box-shadow: var(--shadow);
+        }
+        a {
+            color: white;
+            padding: 10px;
+            display: inline-block;
+            margin-top: 20px;
+            background-color: var(--primary-color);
+            box-shadow: var(--shadow);
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit.</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reiciendis laborum optio debitis quia minus, incidunt officia modi ex culpa at? Necessitatibus sed perferendis quam modi fugit labore iure provident.</p>
+    <ul>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit.</li>
+    </ul>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reiciendis laborum optio debitis quia minus, incidunt officia modi ex culpa at? Necessitatibus sed perferendis quam modi fugit labore iure provident.</p>
+    <img src="https://perprogramera.com/wp-content/uploads/2022/08/logo.png" alt="">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse expedita dicta nam aperiam tempore sint rerum molestias provident est dolores facere veritatis, laborum, laudantium accusantium. Dolorem ullam autem ab voluptatum?</p>
+    <a href="#">Read More</a>
+</body>
+</html>
