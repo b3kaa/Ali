@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container {
+            width: 900px;
+            height: 120px;
+            border: 2px solid red;
+            margin: 50px auto;
+
+            /* grid layout */
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+            /* auto-fill    child width eshte min 80px */
+            /* auto-fit     child width eshte max 1fr */
+        }
+
+        .container div {
+            font-size: 22px;
+            background-color: coral;
+            border: 1px solid blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+</body>
+</html>

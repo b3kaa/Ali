@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12 column grid</title>
+    <style>
+        :root {
+            --grid-width: 960px;
+            --grid-column-padding: 10px;
+            --grid-column-width: calc(960px / 12);
+        }
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+
+            width: var(--grid-width);
+        }
+
+        .row{
+            overflow: auto;
+            clear: both;
+        }
+
+        .row div {
+            float: left;
+            padding: var(--grid-column-padding);
+            overflow: hidden;
+            word-break: break-all;
+
+            border: 1px solid red;
+        }
+
+        .col-1 {
+            width: calc(var(--grid-column-width) * 1);
+        }
+
+        .col-2 {
+            width: calc(var(--grid-column-width) * 2);
+        }
+
+        .col-3 {
+            width: calc(var(--grid-column-width) * 3);
+        }
+
+        .col-4 {
+            width: calc(var(--grid-column-width) * 4);
+        }
+
+        .col-5 {
+            width: calc(var(--grid-column-width) * 5);
+        }
+
+        .col-6 {
+            width: calc(var(--grid-column-width) * 6);
+        }
+
+        .col-7 {
+            width: calc(var(--grid-column-width) * 7);
+        }
+
+        .col-8 {
+            width: calc(var(--grid-column-width) * 8);
+        }
+
+        .col-9 {
+            width: calc(var(--grid-column-width) * 9);
+        }
+
+        .col-10 {
+            width: calc(var(--grid-column-width) * 10);
+        }
+
+        .col-11 {
+            width: calc(var(--grid-column-width) * 11);
+        }
+
+        .col-12 {
+        width: calc(var(--grid-column-width) * 12);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">img</div>
+            <div class="col-6">h1 + p</div>
+            <div class="col-3">h2 + ul</div>
+        </div>
+        <div class="row">
+            <div class="col-6">pjesa 1</div>
+            <div class="col-6">pjesa 2</div>
+        </div>
+    </div>
+</body>
+</html>
