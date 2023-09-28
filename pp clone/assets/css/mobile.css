@@ -1,0 +1,79 @@
+@media screen and (max-width: 765px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .section-title h2 {
+        font-size: 1.5em;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .courses,
+    .team,
+    .stats,
+    .posts,
+    footer .container {
+        grid-template-columns: 1fr;
+    }
+    .companies {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .menu-icon{
+        display: block;
+        color: var(--blue);
+        font-size: 1.5em;
+    }
+
+    main {
+        padding: 80px 0px;
+    }
+
+    div.intro div {
+        display: flex;
+    }
+
+    .intro .button {
+        width: 180px !important;
+    }
+
+    div.rating {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    div.intro h1 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .rating > div {
+        margin-top: 20px;
+    }
+
+    main .container {
+        height: auto;
+    }
+
+    div.intro {
+        width: 100%;
+        padding-right: 0px;
+    }
+    div.illustration {
+        display: none;
+    }
+
+    .courses .card h3 {
+        font-size: 1.3em;
+    }
+
+    .stats div {
+        height: 160px;
+    }
+
+    footer h3 {
+        margin-top: 40px;
+    }
+}
