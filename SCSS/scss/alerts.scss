@@ -1,0 +1,30 @@
+@import 'functions';
+
+%alert {
+    width: half(960px);
+    margin: 10px auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.alert-info{
+    @extend %alert;
+    color: rgb(73, 73, 206);
+    background-color: rgb(125, 170, 207);
+    border-color: rgb(73, 73, 206);
+}
+
+.alert-warning{
+    @extend %alert;
+    color: rgb(181, 206, 37);
+    background-color: rgb(135, 145, 110);
+    border-color: rgb(181, 206, 37);
+}
+.alert-danger{
+    @extend %alert;
+    color: rgb(255, 0, 0);
+    background-color: rgb(183, 88, 207);
+    border-color: rgb(255, 0, 0);
+}

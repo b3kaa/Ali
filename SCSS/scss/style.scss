@@ -1,0 +1,56 @@
+@import 'mixins';
+
+$primary-color: blue;
+$container-width: 960px;
+
+body {
+    background-color: $primary-color;
+}
+
+.container {
+    width: $container-width;
+    background-color: aliceblue;
+    padding: 20px;
+
+    @include boxShadow(10px, 10px, 5px, red);
+
+    img {
+        width: $container-width / 2;
+        
+        @include boxShadow(10px, 10px, 25px, red);
+    }
+}
+
+ul {
+    a {
+        color: red;
+    }
+}
+%alert {
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.alert-info{
+    @extend %alert;
+    color: rgb(73, 73, 206);
+    background-color: rgb(125, 170, 207);
+    border-color: rgb(73, 73, 206);
+}
+
+.alert-warning{
+
+    color: rgb(181, 206, 37);
+    background-color: rgb(135, 145, 110);
+    border-color: rgb(181, 206, 37);
+}
+alert.danger{
+
+    color: rgb(255, 0, 0);
+    background-color: rgb(183, 88, 207);
+    border-color: rgb(255, 0, 0);
+}

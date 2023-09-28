@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@100&display=swap');
+:root {
+    --blue: #180C88;
+    --pink: #EB1B74;
+    --light-pink: #e8d4;
+    --bg-light: #F8F8F8;
+    --yellow: #fcb900;
+}
+
+@font-face {
+    font-family: "Circular Std", Sans-serif;
+    src: url('/pp clone/assets/font/circular-std-medium-500.ttf')
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Circular Std", Sans-serif;
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+section {
+    padding: 80px 0px;
+}
+.bg-light {
+    background-color: var(--bg-light);
+}
+
+.container {
+    width: 1320px;
+    margin: 0px auto;
+}
+
+.section-title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: "Circular Std" , Sans-serif;
+}
+
+.section-title p {
+    font-size: 1.25em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.section-title h2 {
+    color: var(--blue);
+    font-size: 2.2em;
+}
+
+.section-title h2 span,
+main h1 span {
+    color: var(--pink);
+    background-color: var(--light-pink);
+    border-radius: 5px;
+    padding: 2px 6px;
+}
+
+a.button {
+    color: #555;
+        font-weight: bold;
+        display: inline-block;
+        padding: 12px 19px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        margin-right: 20px;
+        transition: all .4s ease-in-out;
+}
+.button:hover {
+    color: white;
+    background-color: var(--pink);
+    border-color: var(--pink);
+}
+
+
+/* HEADER */
+header, header.container {
+    height: 100px;
+}
+header .container{
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 250px;
+    display: block;
+}
+
+.logo img {
+    display: block;
+    width: 100%;
+}
+
+
+nav a {
+    font-family: "Inter", Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+nav a.active, nav a.active:hover{
+    color: var(--blue);
+    opacity: 0.8;
+}
+nav a:hover {
+    color: var(--pink);
+}
+
+nav li {
+    margin: 0px 10px;
+    display: inline-block;
+}
+nav li ul {
+    display: none;
+}
+
+
+
+
+/* MAIN */
+
+    main .container {
+        height: calc(100vh - 100px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    div.intro h1 {
+        color: var(--blue);
+        font-size: 3em;
+        line-height: 65px;
+    }
+
+    div.intro p {
+        margin: 25px 0;
+    }
+
+    div.intro div {
+        display: flex;
+    }
+
+    
+
+    div.rating {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    div.rating strong {
+        margin-right: 10px;
+    }
+
+    div.rating i {
+        color: var(--yellow);
+    }
+
+    div.rating div div span {
+        display: block;
+    }
+
+    
+
+    div.illustration {
+        width: 50%;
+    }
+
+/* COURSES */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.courses .card {
+    border-radius: 5px;
+    border: 1px solid #e3e3e3;
+    padding: 20px;
+}
+
+.courses .card h3 {
+    color: var(--blue);
+    font-size: 1.785em;
+    font-weight: 700;
+    line-height: 1.25em;
+}
+
+.courses .card .icons {
+    margin: 20px 0px;
+    font-size: 32px;
+
+}
+
+.courses .card p {
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.courses .card a {
+
+}
+
+/* ABOUT */
+.team {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.team .card {
+    padding: 35px 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.team .card img {
+    display: block;
+    margin: 0px auto 20px auto;
+    border-radius: 50%;
+}
+.team .card h3 {
+    text-align: center;
+}
+.team .card p {
+    text-align: center;
+    margin: 10px 0px;
+}
+.team .card ul{
+    list-style-type: none;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.team .card li {
+    display: inline-block;
+    margin: 0px 10px;
+    
+}
+.team .card li a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    color: white;
+    background-color: var(--pink);
+    transition: all .4ms ease-in-out;
+}
+
+.team .card li a:hover {
+    background-color: var(--blue);
+}
+
+
+
+
+/* STATISTIKAT */
+
+section#stats {
+    padding: 250px 0px;
+}
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.stats div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats strong {
+    font-size: 64px;
+}
+
+.stats span {
+    display: block;
+}
+
+/* SUCCESS STORIES */
+.companies {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 60px;
+    gap: 30px;
+}
+
+.companies img {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    
+}
+/* TESTIMONIALS */
+.testimonial {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 30px;
+    text-align: center;
+}
+.testimonial p {
+    line-height: 24px;
+}
+.testimonial div {
+    margin-top: 30px;
+}
+.testimonial div strong {
+    color: var(--blue);
+    font-size: 1.5em;
+}
+
+.testimonial div p {
+    margin-top: 10px;
+    color: var(--pink);
+}
+/* BLOG */
+.posts{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.post {
+    padding: 40px 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.post h3 {
+    color: var(--blue);
+    margin-bottom: 10px;
+}
+.post a {
+    color: var(--pink);
+    font-weight: bold;
+}
+#blog .actions {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#blog .actions a.button{
+    color: var(--blue);
+    border-color: var(--blue);
+}
+#blog .actions a.button:hover{
+    color: white;
+    background-color: var(--blue);
+}
+
+/* FOOTER */
+
+/* MOBILE */
+@media screen(max-width: 765px) {
+
+}
+

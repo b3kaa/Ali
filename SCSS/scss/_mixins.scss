@@ -1,0 +1,5 @@
+@mixin boxShadow($h, $v,$r, $c) {
+    box-shadow: $h $v $r $c;
+    border: 5px solid yellow;
+    padding: 20px;
+}

@@ -1,0 +1,31 @@
+@for $i from 1 through 10 {
+    .p-#{$i * 10} {
+        padding: #{$i*10}px;
+    }
+    
+    .pl-#{$i * 10} {
+        padding-left: #{$i*10}px;
+    }
+    
+    .pr-#{$i * 10} {
+        padding-right: #{$i*10}px;
+    }
+    
+    .pt-#{$i * 10} {
+        padding-top: #{$i*10}px;
+    }
+    
+    .pb-#{$i * 10} {
+        padding-bottom: #{$i*10}px;
+    }
+    
+    .px-#{$i * 10} {
+        padding-left: 0px #{$i*10}px;
+        padding-right: 0px #{$i*10}px;
+    }
+    
+    .py-#{$i * 10} {
+        padding-top: #{$i*10}px 0px;
+        padding-bottom: #{$i*10}px 0px;
+    }
+}

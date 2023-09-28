@@ -1,0 +1,27 @@
+@charset "UTF-8";
+.icon-sm {
+  font-size: 30px;
+}
+
+.icon-lg {
+  font-size: 60px;
+}
+
+.icon-xl {
+  font-size: 90px;
+}
+
+.icon-robot::before {
+  content: "🤖";
+  font-style: normal;
+}
+
+.icon-dog::before {
+  content: "🐶";
+  font-style: normal;
+}
+
+.icon-ring::before {
+  content: "💍";
+  font-style: normal;
+}/*# sourceMappingURL=loops.css.map */

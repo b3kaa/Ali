@@ -1,0 +1,55 @@
+$icons: (
+    'robot' : '🤖',
+    'dog' : '🐶',
+    'ring' : '💍'
+
+);
+
+$sizes: ('sm' : 30px, 'lg' :60px, 'xl' : 90px);
+
+@each $label,$size in $sizes {
+    .icon-#{$label} {
+        font-size: $size;
+    }
+    
+}
+
+@each $name, $icon in $icons {
+    .icon-#{$name}::before {
+        content: '#{$icon}';
+        font-style: normal;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// $sizes: 30px, 60px, 90px;
+
+// @each $size in $sizes {
+//     .laptop-#{$size}::before {
+//         content: '💻';
+//         font-size: $size;
+//     }
+
+//     .robot-#{$size}::before {
+//         content: '🤖';
+//         font-size: $size;
+//     }
+// }

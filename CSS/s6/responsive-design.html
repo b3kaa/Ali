@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: aliceblue;
+        }
+        header {
+            background-color: white;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            }
+
+            img {
+            width: 250px;
+            }
+
+            nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            }
+
+            li {
+            display: inline-block;
+            margin: 0px 10px;
+            }
+
+            input {
+            margin-left: 20px;
+            }
+
+        /* Mobile   0-750px */
+        @media (max-width: 750px) {
+                header {
+                width: 100%;
+                height: auto;
+                margin: 0px;
+                padding: 25px 0px;
+
+                flex-direction: column;
+            }
+
+            img{
+                width: 180px;
+            }
+            nav {
+                margin-top: 10px;
+                flex-direction: column-reverse;
+            }
+
+            ul {
+                margin-top: 20px;
+            }
+        }
+
+        /* Tablet  750px - 1199px */
+        @media (min-width: 750px) {
+            header {
+                width: 100%;
+                height: auto;
+                margin: 0px;
+                padding: 25px 0px;
+
+                flex-direction: column;
+            }
+            nav {
+                margin-top: 20px;
+            }
+        }
+
+        /* Desktop  1200px - inf */
+        @media (min-width: 1200px){
+            header {
+                width: 960px;
+                height: 90px;
+                padding: 0px 20px;
+                margin: 40px auto;
+
+                flex-direction: row;
+            }
+            nav {
+                margin-top: 0px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <img src="/assets/foto/logo.png" alt="">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

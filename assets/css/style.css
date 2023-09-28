@@ -1,0 +1,49 @@
+body {
+  background-color: blue;
+}
+
+.container {
+  width: 960px;
+  background-color: aliceblue;
+  padding: 20px;
+  box-shadow: 10px 10px 5px red;
+  border: 5px solid yellow;
+  padding: 20px;
+}
+.container img {
+  width: 480px;
+  box-shadow: 10px 10px 25px red;
+  border: 5px solid yellow;
+  padding: 20px;
+}
+
+ul a {
+  color: red;
+}
+
+.alert-info {
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.alert-info {
+  color: rgb(73, 73, 206);
+  background-color: rgb(125, 170, 207);
+  border-color: rgb(73, 73, 206);
+}
+
+.alert-warning {
+  color: rgb(181, 206, 37);
+  background-color: rgb(135, 145, 110);
+  border-color: rgb(181, 206, 37);
+}
+
+alert.danger {
+  color: rgb(255, 0, 0);
+  background-color: rgb(183, 88, 207);
+  border-color: rgb(255, 0, 0);
+}/*# sourceMappingURL=style.css.map */

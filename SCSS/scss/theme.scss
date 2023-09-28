@@ -1,0 +1,22 @@
+$light-bg: #333;
+$light-text: white;
+
+$dark-bg: #333;
+$dark-text:white;
+
+@mixin theme($light: true) {
+    @if $light {
+        color: $light-text;
+        background-color: $light-bg;
+    }
+
+    @else {
+        color: $light-text;
+        background-color: $dark-bg;
+    }
+}
+
+body {
+    @include theme($light: false);
+
+}
