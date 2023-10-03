@@ -1,2 +1,0 @@
-[] fix dropdown menu (desktop)
-[] implement mobile menu

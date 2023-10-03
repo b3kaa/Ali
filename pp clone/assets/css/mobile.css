@@ -7,10 +7,6 @@
         font-size: 1.5em;
     }
 
-    nav {
-        display: none;
-    }
-
     .courses,
     .team,
     .stats,
@@ -22,6 +18,46 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
+
+    label i{
+        font-size: 1.5em;
+        color: var(--blue);
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    label,
+    input{
+        display: block;
+    }
+
+
+    .toggle-menu:checked + nav {
+        display: block;
+    }
+
+    .toggle-menu:not(:checked)~nav {
+        display: none;
+    }
+    
+    nav {
+        display: none;
+        background-color: #fff;
+        position: absolute;
+        top: 100px;
+        left: 0px;
+    }
+    nav,
+    nav ul {
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
     .menu-icon{
         display: block;
         color: var(--blue);
@@ -33,22 +69,14 @@
     }
 
     div.intro div {
-        display: flex;
-    }
-
-    .intro .button {
-        width: 180px !important;
-    }
-
-    div.rating {
         flex-direction: column;
-        justify-content: space-between;
     }
 
     div.intro h1 {
         font-size: 32px;
         line-height: 42px;
     }
+
     .rating > div {
         margin-top: 20px;
     }
@@ -61,12 +89,13 @@
         width: 100%;
         padding-right: 0px;
     }
+
     div.illustration {
         display: none;
     }
 
     .courses .card h3 {
-        font-size: 1.3em;
+        font-size: 1.4em;
     }
 
     .stats div {
