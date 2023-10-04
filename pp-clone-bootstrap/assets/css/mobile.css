@@ -1,0 +1,59 @@
+@media screen and (max-width: 765px) {
+    header,
+    .navbar-expand-lg {
+    height: auto;
+}
+    .section-title h2 {
+        font-size: 1.5em;
+    }
+
+
+    div.intro div {
+        flex-direction: column;
+    }
+
+    div.intro h1 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .rating>div {
+        margin-top: 20px;
+    }
+
+    main .container {
+        height: auto;
+    }
+
+    div.intro {
+        width: 100%;
+        padding-right: 0px;
+    }
+
+    div#illustration {
+        display: none !important;
+    }
+
+    #about .card {
+        padding: 20px 0px;
+        margin-bottom: 20px;
+    }
+    #courses .card {
+        height: auto;
+    }
+
+    #blog .post {
+        margin-bottom: 20px;
+    }
+
+    #courses .card h3 {
+        font-size: 1.4em;
+    }
+
+    #success-stories .row div {
+        margin-bottom: 20px;
+    }
+    footer h3 {
+        margin-top: 40px;
+    }
+}

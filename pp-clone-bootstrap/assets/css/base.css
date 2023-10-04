@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@100&display=swap');
+
+:root {
+    --blue: #180C88;
+    --pink: #EB1B74;
+    --light-pink: #e8d4;
+    --bg-light: #F8F8F8;
+    --yellow: #fcb900;
+}
+
+@font-face {
+    font-family: "Circular Std", Sans-serif;
+    src: url('/pp-clone-bootstrap/assets/font/circular-std-medium-500.ttf')
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Circular Std", Sans-serif;
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+section,
+footer {
+    padding: 80px 0px;
+}
