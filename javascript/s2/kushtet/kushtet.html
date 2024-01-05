@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <script>
+        // 3# if , else if , else
+        alert('1. Deponim / 2. Terheqje / 3. Pagese')
+        
+        
+        var action_prompt = prompt('Qfare deshiron te besh: ')
+
+        switch(action_prompt){
+            case '1':
+                alert('Beni deponim')
+                break
+            case '2':
+                alert('Beni terheqje')
+                break
+            case '3':
+            case '4':
+            case '5':
+                alert('Beni pagese 5% / 8% / 12%')
+                break
+            default:
+                alert('Keni dhene opsion te gabuar')
+                break
+        }
+        
+        // if(action_prompt == '1') {
+        //     alert('Beni deponim')
+        // } else if(action_prompt == '2') {
+        //     alert('Beni terheqje')
+        // } else if(action_prompt == '3') {
+        //     alert('Beni pagese')
+        // }
+        // // mund te kemi pakufi kushte ne else if ...
+        // else {
+        //     alert('Keni dhene opsion te gabuar')
+        // }
+    </script>
+</body>
+</html>
